@@ -13,6 +13,8 @@ WORKDIR ${APP_WORKDIR}
 COPY ./bin/docker-entrypoint.sh /usr/local/bin/docker-entrypoint
 RUN chmod +x /usr/local/bin/docker-entrypoint
 
+ENV PORT=3000
+
 # Set docker entry point
 ENTRYPOINT ["docker-entrypoint"]
 
